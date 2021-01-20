@@ -1,0 +1,17 @@
+1. Get npm install cosmicjs to start using js
+
+2. Import it in APP
+
+3. In order to get in DATA from cosmicjs, need some info: ID to which project to get data from, then you need API key. Get it from Settings/Basic Settings from cosmis js
+You need the bucket slug, read key is the API key, and write key lets you allow write data to the project
+
+4. API keys are supposed to be secret. So we need to save this info in a way that no one else gets access. 
+We shall use miljoe variabler. This means that I will put this info in memory and no where else in the code. 
+
+.development.env -- miljoe variabler doc. When you upload crap, docs with .env will be ignored. 
+
+5. stuff from cosmic will be stored in state
+
+look at Basic Usage in npm cosmic documentation
+
+    const client = new Cosmic() INSTEAD OF USING 'require' after you have imported. 
